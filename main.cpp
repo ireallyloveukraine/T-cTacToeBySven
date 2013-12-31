@@ -18,6 +18,7 @@ int main()
     std::cout << "/-------------------------/" << std::endl;
     do
     {
+    	
         if(invalidmove == false){
                 playerturn(turn =!turn);
         }
@@ -26,11 +27,12 @@ int main()
 		int botschoice = rand() %9;
 	        playerchoice = botschoice;
 	}
+	
 	std::cout << "|" << fyrkant[1]<< "|" << fyrkant[2]<< "|" << fyrkant[3]<< "|" << std::endl;
         std::cout << "|" << fyrkant[4]<< "|" << fyrkant[5]<< "|" << fyrkant[6]<< "|" << std::endl;
         std::cout << "|" << fyrkant[7]<< "|" << fyrkant[8]<< "|" << fyrkant[9]<< "|" << std::endl;
+  
         std::cout << "Player : " << playermarker << " its your turn" << std::endl;
-        
         if(turn == 0) std::cin >> playerchoice;
 
         ismovevalid( playerchoice, playermarker );
@@ -44,7 +46,7 @@ int main()
     std::cout << "|" << fyrkant[4]<< "|" << fyrkant[5]<< "|" << fyrkant[6]<< "|" << std::endl;
     std::cout << "|" << fyrkant[7]<< "|" << fyrkant[8]<< "|" << fyrkant[9]<< "|" << std::endl;
     std::cout << "Congratulations, the winner is    " << playermarker << std::endl;
-    std::cout << "do you want to "	 << std::endl;
+  
     system("pause");
 
 }
