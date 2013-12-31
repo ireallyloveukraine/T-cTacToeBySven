@@ -19,12 +19,10 @@ int main()
         if(invalidmove == false){
                 playerturn(turn =!turn);
         }
-
 		if(turn == 1)	{
 			int botschoice = rand() %9;
 		    playerchoice = botschoice;
 		}
-
 		std::cout << "|" << fyrkant[1]<< "|" << fyrkant[2]<< "|" << fyrkant[3]<< "|" << std::endl;
         std::cout << "|" << fyrkant[4]<< "|" << fyrkant[5]<< "|" << fyrkant[6]<< "|" << std::endl;
         std::cout << "|" << fyrkant[7]<< "|" << fyrkant[8]<< "|" << fyrkant[9]<< "|" << std::endl;
@@ -36,7 +34,6 @@ int main()
         changeboard( playerchoice,playermarker,    invalidmove,   turn );
         checkwinner( playermarker );
 		system("cls");
-
 
     }while(winner == false);
         std::cout << "|" << fyrkant[1]<< "|" << fyrkant[2]<< "|" << fyrkant[3]<< "|" << std::endl;
